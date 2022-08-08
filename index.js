@@ -11,7 +11,7 @@ app.get("/", function (req, res) {
 });
 
 app.post("/", function (req, res) {
-  const apiKey = "54e04514ea2c94f9f2ffc59857a400a0";
+  const apiKey = process.env.API_KEY;
   const unit = "metric";
   const city = req.body.cityName;
   const url =
